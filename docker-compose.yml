@@ -1,0 +1,7 @@
+services:
+  iris-ml-api:
+    build: .
+    container_name: iris-ml-compose
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
